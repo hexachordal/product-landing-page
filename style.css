@@ -1,0 +1,241 @@
+body{
+    margin-top: -20px;
+    padding: 0px;
+    margin-bottom:20px;
+    background-color: rgb(163,204,214);
+    height: 100%;
+    animation-name: shimmer;
+    animation-duration: 30s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    background-image: linear-gradient(45deg, rgba(0,355,0,0.2), rgba(0,0,355,0.2),rgba(0,0,355,0.2),rgba(0,0,355,0.2)); 
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  @keyframes shimmer {
+    0.3% {
+      background-image: linear-gradient(57deg,rgba(0,0,355,0.2), rgba(0,355,0,0.2),rgba(0,0,355,0.2),rgba(0,0,355,0.2));
+    }
+    0.8% {
+      background-image: linear-gradient(72deg, rgba(0,0,355,0.2), rgba(0,0,355,0.2),rgba(0,355,0,0.2),rgba(0,0,355,0.2));
+    }
+    1.3% {
+      background-image: linear-gradient(90deg,rgba(0,0,355,0.2), rgba(0,0,355,0.2),rgba(0,0,355,0.2),rgba(0,355,0,0.2));
+    }
+    1.9% {
+      background-image: linear-gradient(60deg, rgba(0,0,355,0.2), rgba(0,0,355,0.2),rgba(0,355,0,0.2),rgba(0,0,355,0.2));
+    }
+    2.3% {
+      background-image: linear-gradient(45deg,rgba(0,0,355,0.2), rgba(0,355,0,0.2),rgba(0,0,355,0.2),rgba(0,0,355,0.2));
+    }
+    2.7% {
+      background-image: linear-gradient(45deg,rgba(0,355,0,0.2), rgba(0,0,355,0.2),rgba(0,0,355,0.2),rgba(0,0,355,0.2));
+    }
+    100% {
+      background-image: linear-gradient(45deg,rgba(0,355,0,0.2), rgba(0,0,355,0.2),rgba(0,0,355,0.2),rgba(0,0,355,0.2));
+    }
+  }
+  
+  
+  #header{
+    background-color: rgb(130,163,222); 
+    margin-top: 0px;
+    padding-top: 0px;
+    top:-15px;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  #title {
+  
+  }
+  
+  #img-container {
+  
+  }
+  
+  img{
+    height: 32px;
+    width: 32px;
+  }
+  #header-img{
+    
+  }
+  
+  #nav-bar{
+   
+  }
+  
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-link {
+  }
+  
+  a{
+    padding: 2px;
+    color: black;
+    text-decoration: none;
+    border-style: hidden;
+    border: 2px 2px 2px 2px;
+    border-radius: 5px;
+  }
+  
+  a:hover{
+    color: rgba(0,0,355,0.5);
+    animation: hovering 3s infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes hovering {
+    25% {
+      padding: 2px;
+      border-bottom: 2px solid rgba(0,355,0,0.6);
+      border-radius: 5px;
+    }
+    50% {
+      padding: 2px;
+      border-bottom: 2px;
+      border-right:  2px solid rgba(0,355,0,0.6);
+      border-radius: 5px;
+    }
+    75% {
+      padding: 2px;
+      border-top: 2px solid rgba(0,355,0,0.6);
+      border-right: 2px;
+      border-radius: 5px;
+    }
+    
+    100% {
+      padding: 2px;
+      border-left: 2px solid rgba(0,355,0,0.6);
+      border-top:  2px;
+      border-radius: 5px;
+    }
+    
+    
+  }
+  
+  a:active{
+    color: rgba(0,355,355,0.6);
+  }
+  li {
+    padding-left: 10px;
+    padding-right: 10px;
+    list-style-type: none;
+    align-self: center;
+   
+  }
+  
+  #about{
+   
+  }
+  #pricing{
+  
+  }
+  #contact{
+  }
+  
+  #main {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #about-body{
+    flex: 33%;
+  }
+  #pricing-body{
+    flex: 33%;
+  
+  }
+  #contact-body{
+    flex: 34%;
+  }
+  
+  
+  #vid-con{
+    display: flex;
+    flex-direction: row;
+  }
+  
+  iframe{
+    width: 49%;
+    height: 400px;
+  }
+  
+  @media (max-width: 800px) {
+    body{
+      margin-top: -10px;
+    }
+    #header{
+      top:0;
+      font-size: 12px;
+    }
+    iframe{
+      width: 49%;
+      height: 200px;
+    }
+  }
+  @media (max-width: 600px) {
+    body{
+      margin-top: 0px;
+    }
+    #header{
+      font-size: 9px;
+    }
+    #vid-con{
+    display: flex;
+    flex-direction: column;
+    }
+    iframe{
+      width: 100%;
+      height: 60vh;
+    }
+  }
+  @media (max-width: 430px) {
+    body{
+      margin-top: 2px;
+    }
+    #header{
+      font-size: 7px;
+    }
+    #vid-con{
+    display: flex;
+    flex-direction: column;
+    }
+    iframe{
+      width: 100%;
+      height: 40vh;
+    }
+  }
+  
+  #form {
+    display: flex;
+  }
+  
+  #name {
+    flex: 40%;
+  }
+  
+  #email {
+    flex: 40%;
+  }
+  
+  
+  @media (max-width: 800px) {
+    #form{
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      left: 20%;
+      width: 60%;
+    }
+  }
+  
+  

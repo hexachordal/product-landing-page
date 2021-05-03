@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Song Ranger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<header id="header">
+    <div id="img-container">
+      <img src="https://4.bp.blogspot.com/-041JsPrSaT0/UghvQ4JTqJI/AAAAAAAABK8/4JHc582cJXs/s1600/alto+clef.png" id="header-img">
+    </div>
+    <h1 id="title">Song Ranger<h1>
+  
+        <nav id="nav-bar">
+          <ul>
+            <li><a id="about" class="nav-link" href=#about-body>About</a></li>
+            <li><a id="pricing" class="nav-link" href=#pricing-body>Pricing</a></li>
+            <li><a id="contact" class="nav-link" href=#contact-body>Contact Us</a></li>
+            <ul>
+        </nav>
+  </header>
+  <section id="main">
+  <div id="about-body">
+      <h2>About us</h2>
+      <p>Have you ever needed a song arranged but didn't know where to start? Look no further! Song Ranger is the one stop place for your arrangement needs. From catchy pop tunes to 30-piece orchestral arrangements, we have it all! Don't let me only tell you about it, have a listen!</p>
+    <div class="vid-con">
+        <iframe id="video" src="https://www.youtube.com/embed/IwNHwvBF05g" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>Orchestral arrangement</iframe>
+      
+        <iframe src="https://www.youtube.com/embed/WnJI2WJB4So" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </div>
+    <div id="pricing-body">
+      <h2>Pricing options</h2>
+      <p>Our advanced team of arrangers have done tremendous work throughout the years to produce high value work. Here are our three pricing options.</p>
+    </div>
+    <div id="contact-body">
+      <h2>Ready to dive in? Contact us here!</h2>
+      <p>Have you ever needed a song arranged but didn't know where to start? Look no further! Song Ranger is the one stop place for your arrangement needs. From catchy pop tunes to 30-piece orchestral arrangements, we have it all!</p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <label id="name-label" for="name">Enter your name</label><br>
+    <input id="name" name="name" type="text" placeholder="Full Name" required onfocus="toggleName()" onblur="toggleName()"><br><br>
+         <label id="email-label" for="email">Enter your email</label><br>
+        <input id="email" type="email" name="email" placeholder="Email address" required onfocus="toggleEmail()" onblur="toggleEmail()"><br>
+        <input target="https://www.freecodecamp.com/email-submit" id="submit" type="submit">
+      </form>
+    </div> 
+          </section>
+          
+    <script>
+      function toggleName() {
+        if (document.getElementById("name").placeholder === "Full Name") {
+          document.getElementById("name").placeholder = ""
+        } else {
+          document.getElementById("name").placeholder = "Full Name"
+        }
+      }
+  
+      function toggleEmail() {
+        if (document.getElementById("email").placeholder === "Email address") {
+          document.getElementById("email").placeholder = ""
+        } else {
+          document.getElementById("email").placeholder = "Email address"
+        }
+      }
+          </script>
+</body>
+</html>
